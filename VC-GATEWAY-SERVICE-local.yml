@@ -83,7 +83,7 @@ spring:
               args:
                 name: vc-api-fallback
                 fallbackuri: forward:/vcApiFallBack  
-        - id: v2_mysc-api-instance
+        - id: mysc_v2
           uri: http://msc-env-dev-v3-app-support.eba-6qrn4mzp.ap-northeast-2.elasticbeanstalk.com/
           predicates:
             - Path=/v2_mysc/**
