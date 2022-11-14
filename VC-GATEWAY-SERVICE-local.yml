@@ -83,10 +83,10 @@ spring:
               args:
                 name: vc-api-fallback
                 fallbackuri: forward:/vcApiFallBack  
-        - id: mysc_v2
-          uri: http://msc-env-dev-v3-app-support.eba-6qrn4mzp.ap-northeast-2.elasticbeanstalk.com/
+        - id: mysc2
+          uri: http://localhost:9999/
           predicates:
-            - Path=/v2_mysc/**
+            - Path=/mysc2/**
           filters:
             - CustomAuthFilter
             - name: RequestSize
